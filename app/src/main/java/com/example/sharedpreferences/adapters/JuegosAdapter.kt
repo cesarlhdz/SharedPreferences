@@ -47,32 +47,10 @@ class JuegoAdapter(private val juegos: List<Juego>, private val edad: Int) :
                 holder.botonComprar.isEnabled = true
             }
             "E10+" -> { // Para 10 años o más
-                if (edad >= 10) {
-                    holder.botonComprar.isEnabled = true
-                } else {
-                    holder.botonComprar.isEnabled = false
-                    holder.botonComprar.setOnClickListener {
-                        Toast.makeText(
-                            holder.itemView.context,
-                            "Este juego solo está permitido para mayores de 10 años",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                }
+                holder.botonComprar.isEnabled = edad >= 10
             }
             "M" -> { // Para mayores de 17 años
-                if (edad >= 17) {
-                    holder.botonComprar.isEnabled = true
-                } else {
-                    holder.botonComprar.isEnabled = false
-                    holder.botonComprar.setOnClickListener {
-                        Toast.makeText(
-                            holder.itemView.context,
-                            "Este juego solo está permitido para mayores de 17 años",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                }
+                holder.botonComprar.isEnabled = edad >= 17
             }
         }
         holder.botonComprar.setOnClickListener {
