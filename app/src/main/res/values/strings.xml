@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="precio_format">Precio: %.2f</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_horizontal"
+        android:title="Horizontal" />
+    <item
+        android:id="@+id/menu_vertical"
+        android:title="Vertical" />
+    <item
+        android:id="@+id/menu_2_columnas"
+        android:title="2 Columnas" />
+    <item
+        android:id="@+id/menu_3_columnas"
+        android:title="3 Columnas" />
+</menu>
